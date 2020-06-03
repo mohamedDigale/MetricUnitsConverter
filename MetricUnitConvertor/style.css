@@ -1,0 +1,63 @@
+*,*::before,*::after{
+
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial;
+    font-weight: normal;
+}
+
+body{
+padding: o;
+margin: 0;;
+background: linear-gradient(to right,#eafd42,rgb(0, 60, 255));
+
+}
+
+.convertor-grid {
+
+    display: grid; 
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+   
+}
+
+.convertor-grid input{
+    
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(235, 246, 231,o.5);
+
+}
+.convertor-grid input:hover{
+
+    background-color: rgb(189, 255, 200);
+}
+
+
+.output{
+    grid-column: 1/7;
+    background-color: rgb(33, 50, 66);
+    color: lavenderblush;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+body h4, h3{
+    background-color: rgb(179, 70, 70);
+  padding: 3px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+
